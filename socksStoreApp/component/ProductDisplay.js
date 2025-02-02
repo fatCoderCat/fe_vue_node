@@ -12,7 +12,7 @@ app.component("product-display", {
             <div class="product-container">
                 <div class="product-image">
                     <!--syntax: <img v-bind:src="image"> OR sugar <img :src="image">-->
-                    <img :class="{ 'out-of-stock-img': !inStock }" v-bind:src="image">
+                    <img :class="{ 'out-of-stock-img': !inStock }" :src="image">
                 </div>
                 <div class="product-info">
                     <h1>{{ title }}</h1>
